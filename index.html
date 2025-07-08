@@ -30,8 +30,8 @@
         <div class="navbar-brand">
           <a href="index.html">
             <img
-              src="image/logos.png"
-              alt="logo"
+              src="./public/images/logos.png"
+              alt="thapa eCommerce logo"
               class="logo"
               width="80%"
               height="auto"
@@ -87,7 +87,7 @@
               data-aos="fade-up"
               data-aos-delay="600">
           <figure>
-            <img src="image/heroSection.svg"
+            <img src="./public/images/heroSection.svg"
                  alt="coding languages using html css js"/>
           </figure>
         </div>
@@ -124,7 +124,7 @@
           <a href="#">Show Now</a>
         </div>
         <div class="extra-img extra-laptop">
-          <img src="image/laptop.png" alt="error"/>
+          <img src="./public/images/laptop.png" alt="error"/>
         </div>
        </div>
 
@@ -135,7 +135,7 @@
           <a href="#">Show Now</a>
         </div>
         <div class="extra-img">
-          <img src="image/headphoneEcom.png" alt="error"/>
+          <img src="./public/images/headphoneEcom.png" alt="error"/>
         </div>
        </div>
 
@@ -146,11 +146,69 @@
           <a href="#">Show now</a>
         </div>
         <div class="extra-img">
-          <img src="image/mobiles.png" alt="error"/>
+          <img src="./public/images/mobiles.png" alt="error"/>
         </div>
        </div>
       </div>
     </section>
+
+    <!--Product section-->
+    <section class="section-products">
+      <div class="container">
+        <h2 class="section-common--heading">Checkout TrustCart</h2>
+      </div>
+      <section class="container">
+        <div id="productContainer"></div>
+      </section>
+    </section>
+
+    <!--product template section-->
+    <template id="productTemplate">
+      <div class="cards" id="cardValue">
+        <article class="information[card]">
+          <span class="category"></span>
+          <div class="imageContainer">
+            <img class="productImage" src="" alt="" />
+          </div>
+          <h2 class="productName"></h2>
+
+           <div class="productRating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+
+          <p class="productDescription"></p>
+
+          <div class="productPriceElement">
+            <p class="productPrice"></p>
+            <p class="productActualPrice"></p>
+          </div>
+
+          <div class="productStockElement">
+            <p class="productProperty">Total Stocks Available:</p>
+            <p class="productStock"></p>
+          </div>
+          
+          <div class="productQuantityElement">
+            <p class="productProperty">Quantity(Pieces)</p>
+            <div class="stockElement">
+              <button class="cartIncrement">+</button>
+              <p class="productQuantity">1</p>
+              <button class="cartDecrement">-</button>
+            </div>
+          </div>
+          <button class="add-to-cart-button">
+            <i class="fa-solid fa-cart-shopping"></i>Add to Cart
+          </button>
+        </article>
+      </div>
+    </template>
+
+
+
+
 <!----Policy-->
     <section class="section-policy">
       <div class="container grid grid-four--cols">
@@ -202,7 +260,7 @@
       <div class="footer-container container">
         
         <div class="content_1">
-          <img src="image/logos.png" alt="logo"/>
+          <img src="./public/images/logos.png" alt="logo"/>
           <p>
             Welcome to TrustCart, your ultimate destination for cutting-edge gadgets!
           </p>
